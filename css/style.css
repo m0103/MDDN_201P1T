@@ -1,0 +1,113 @@
+*{
+	box-sizing: border-box;
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: sans-serif;
+	background-color: #D2BEB9
+}
+
+section{
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+section h3 {
+
+}
+
+section p {
+	margin: 0px;
+}
+
+section .post {
+	background-color: #A2777F;
+	color: #D2BEB9;
+	padding: 10px;
+}
+
+header{
+	width: 100%;
+	background-color: #631824;
+	color: #D2BEB9;
+	margin: 0px;
+	padding: 0px;
+	position: fixed;
+}
+
+header nav{
+	color: #D2BEB9;
+	width: 100%;
+	height: 60px;
+}
+
+header nav a,
+header nav h3,
+header nav span{
+	color: #D2BEB9;
+	float: left;
+	margin: 0px;
+	line-height: 60px;
+	margin-left: 0px;
+	margin-right: 1em;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+
+main {
+	margin: 0px;
+	padding: 0px;
+}
+
+#empty-space {
+ margin: 0px;
+ padding: 0px;
+ width: 100%;
+ height: 200px;
+}
+
+/* Simple grid */
+.g-row{
+	width: 100%;
+	overflow: hidden;
+}
+
+.g-row img{
+	width: 100%; /*This makes all images in grids to be the size of their cell */
+}
+
+.g-50{
+	width: calc(50% - 20px);
+	float: left;
+	margin: 10px;
+}
+
+.g-30{
+	width: 30%;
+	float: left;
+}
+
+.g-70{
+	width: 70%;
+	float: left;
+}
+
+.show{
+	border: 1px solid blue;
+	padding: 2px;
+}
+
+.padded{
+	padding: 20px; /* I add this to cells to add a little padding*/
+}
